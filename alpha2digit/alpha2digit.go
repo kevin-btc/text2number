@@ -7,7 +7,7 @@ import (
 )
 
 func Alpha2Digit(sentence string) (string, error) {
-    cmd := exec.Command("python", "text_to_num/search_and_replace_by_num.py",sentence)
+    cmd := exec.Command("search_and_replace_by_num", sentence)
 
     output, err := cmd.Output()
 
